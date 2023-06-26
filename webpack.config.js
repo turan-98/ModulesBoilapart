@@ -1,7 +1,6 @@
 const path = require("path");
-
 module.exports = {
-  mode: "development",
+  mode: "production",
   output: {
     filename: "bundle.js",
     path: path.resolve(__dirname, "public", "assets", "js"),
@@ -20,4 +19,5 @@ module.exports = {
       },
     ],
   },
+  devtool: 'source-map'
 };
